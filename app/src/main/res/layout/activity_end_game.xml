@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1D27"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".EndGameActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/end_game_anim"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:lottie_autoPlay="true"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        app:lottie_loop="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Поздравляем! Вы выиграли 🥳!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="#FF5722"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/end_game_anim"
+        />
+
+    <Button
+        android:id="@+id/btn_restart"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="В главный экран"
+        android:textStyle="bold"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
